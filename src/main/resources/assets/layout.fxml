@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/26" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.project.Controller">
+   <children>
+      <Button fx:id="buttonPicture" layoutX="546.0" layoutY="185.0" mnemonicParsing="false" onAction="#callPicture" prefHeight="40.0" prefWidth="80.0" text="Adjuntar" AnchorPane.bottomAnchor="16.0" AnchorPane.leftAnchor="16.0" />
+      <Button fx:id="buttonBreak" layoutX="509.0" layoutY="112.0" mnemonicParsing="false" onAction="#callBreak" prefHeight="40.0" prefWidth="80.0" text="Detener" AnchorPane.bottomAnchor="72.0" AnchorPane.rightAnchor="16.0" />
+      <ScrollPane fx:id="scrollPane" fitToWidth="true" hbarPolicy="NEVER" layoutX="24.0" layoutY="24.0" prefHeight="357.0" prefWidth="397.0" AnchorPane.bottomAnchor="72.0" AnchorPane.leftAnchor="16.0" AnchorPane.rightAnchor="100.0" AnchorPane.topAnchor="16.0">
+         <content>
+            <VBox fx:id="chatContainer" prefHeight="200.0" prefWidth="100.0" spacing="15.0">
+               <padding>
+                  <Insets bottom="15.0" left="15.0" right="15.0" top="15.0" />
+               </padding>
+            </VBox>
+         </content>
+      </ScrollPane>
+      <TextField fx:id="txtMessage" prefHeight="40.0" prefWidth="40.0" promptText="Escribe un mensaje..." AnchorPane.bottomAnchor="16.0" AnchorPane.leftAnchor="110.0" AnchorPane.rightAnchor="110.0" />
+      <Button fx:id="btnSend" mnemonicParsing="false" onAction="#sendMessage" prefHeight="40.0" prefWidth="80.0" text="Enviar" AnchorPane.bottomAnchor="16.0" AnchorPane.rightAnchor="16.0" />
+   </children>
+</AnchorPane>
